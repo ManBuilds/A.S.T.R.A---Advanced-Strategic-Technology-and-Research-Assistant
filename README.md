@@ -275,6 +275,37 @@ A.S.T.R.A/
 
 ---
 
+## Private Data Storage
+
+A.S.T.R.A stores your personal data locally on your machine and **never commits it to GitHub**. This includes:
+
+### 1. **Chat History** (`database/chats_data/`)
+- All your conversations with A.S.T.R.A are stored as JSON files
+- Each session gets a unique UUID
+- Files are stored locally only and excluded from version control
+- See [database/chats_data/README.md](A.S.T.R.A/database/chats_data/README.md) for details
+
+### 2. **Learning Data** (`database/learning_data/`)
+- Your personal documents, notes, and knowledge base
+- Used to enhance A.S.T.R.A's responses
+- Completely private and not shared or backed up to GitHub
+- See [database/learning_data/README.md](A.S.T.R.A/database/learning_data/README.md) for details
+
+### 3. **Vector Store** (`database/vector_store/`)
+- FAISS index and embeddings of your documents
+- Generated automatically from your learning data
+- Rebuilt on server restart if deleted
+- Completely private to your machine
+- See [database/vector_store/README.md](A.S.T.R.A/database/vector_store/README.md) for details
+
+**Security Promise:**
+- ✅ All data stays on your machine
+- ✅ Nothing is uploaded to GitHub (see `.gitignore`)
+- ✅ API keys are protected via `.env`
+- ✅ You have complete control over your data
+
+---
+
 ## Adding Learning Data
 
 To make your assistant smarter with custom knowledge:
@@ -297,6 +328,8 @@ My name is John Doe.
 I work as a software engineer.
 I'm interested in AI and machine learning.
 ```
+
+For more details, see [database/learning_data/README.md](A.S.T.R.A/database/learning_data/README.md)
 
 ---
 
