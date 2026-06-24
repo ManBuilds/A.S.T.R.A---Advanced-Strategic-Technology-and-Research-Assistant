@@ -46,6 +46,11 @@ __MACOSX/
 .AppleDouble
 .LSOverride
 
+# Database & Personal Data (PRIVATE - Never commit)
+database/chats_data/
+database/learning_data/
+database/vector_store/
+
 # Testing
 .pytest_cache/
 .coverage
