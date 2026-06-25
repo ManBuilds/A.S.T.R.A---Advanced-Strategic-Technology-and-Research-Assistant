@@ -12,26 +12,26 @@ Perfect for building your own AI-powered applications with reliable, self-hosted
 
 ## Features
 
-✨ **Dual Chat Modes**
+ **Dual Chat Modes**
 - **General Chat**: Pure LLM responses enriched with your learning data and past conversations
 - **Realtime Chat**: Performs live web search first, then combines results with context for current answers
 
-🧠 **Smart Memory System**
+ **Smart Memory System**
 - Vector store retrieval from past chats and learning documents
 - Persistent sessions that survive server restarts
 - Automatic chat history management
 
-⚡ **High Performance**
+ **High Performance**
 - Groq's rapid inference for sub-second response times
 - Async/await support for concurrent requests
 - Built-in rate limit handling
 
-🔒 **Privacy-Focused**
+ **Privacy-Focused**
 - Single-user architecture (one server per person)
 - All data stays on your machine
 - API keys managed securely via `.env`
 
-📊 **Easy Integration**
+ **Easy Integration**
 - RESTful API with clear endpoints
 - Interactive API documentation at `/docs`
 - Health monitoring for all services
